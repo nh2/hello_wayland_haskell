@@ -1,0 +1,22 @@
+name:                hello-wayland-haskell
+version:             0.1.0
+license:             MIT
+author:              Niklas Hambüchen <mail@nh2.me>
+maintainer:          Niklas Hambüchen <mail@nh2.me>
+build-type:          Simple
+cabal-version:       >=1.8
+homepage:            https://github.com/nh2/hello_wayland_haskell
+bug-reports:         https://github.com/nh2/hello_wayland_haskell/issues
+synopsis:            Haskell Wayland Window Manager
+description:
+  Wayland window manager prototype in Haskell.
+
+
+executable hello_wayland_haskell
+  main-is:
+    Main.hs
+  build-depends:
+      base                      >= 4.7.0.0 && < 5
+    , containers
+    , hayland
+    , unix
